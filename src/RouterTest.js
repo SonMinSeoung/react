@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import Profile from "./common/homwork";
+import Profile from "./common/YourFirstComponent";
 
 function MyComponent() {
     const location = useLocation();

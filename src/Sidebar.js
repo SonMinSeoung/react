@@ -3,7 +3,7 @@ import { Breadcrumb, Layout, Menu, theme } from 'antd';
 import { useState } from 'react';
 import { Title } from './data';
 import { Route, Router, Routes, useParams, useLocation, Link} from 'react-router-dom';
-import Profile from './common/homwork';
+import Profile from './common/YourFirstComponent';
 
 
 const { Header, Content, Footer, Sider } = Layout;
