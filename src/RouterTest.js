@@ -20,6 +20,8 @@ import * as Two_2Components_3 from "./common/2-2/useState2";
 import * as Two_3Components_1 from "./common/2-3/Render and Commit";
 import * as Two_4Components_1 from "./common/2-4/State as a Snapshot";
 import * as Two_5Components_1 from "./common/2-5/Queueing a Series of State Updates";
+import * as Two_6Components_1 from "./common/2-6/Updating Objects in State";
+import * as Two_7Components_1 from "./common/2-7/Updating Arrays in State";
 
 
 
@@ -45,6 +47,8 @@ export default function App() {
   const Components23_1 = Object.values(Two_3Components_1);
   const Components24_1 = Object.values(Two_4Components_1);
   const Components25_1 = Object.values(Two_5Components_1);
+  const Components26_1 = Object.values(Two_6Components_1);
+  const Components27_1 = Object.values(Two_7Components_1);
 
 
   function myFunction(Names,num,flag='ul') {
@@ -133,6 +137,14 @@ export default function App() {
               2-5 Queueing a Series of State Updates
               {myFunction(Components25_1,'2-5')}
           </ul>
+          <ul>
+              2-6 Updating Objects in State
+              {myFunction(Components26_1,'2-6')}
+          </ul>
+          <ul>
+              2-7 Updating Arrays in State
+              {myFunction(Components27_1,'2-7')}
+          </ul>
         </nav>
         <nav style={{marginRight: 'auto'}}>
           <ul>
@@ -167,6 +179,8 @@ export default function App() {
             {myFunction(Components23_1,'2-3','no')}
             {myFunction(Components24_1,'2-4','no')}
             {myFunction(Components25_1,'2-5','no')}
+            {myFunction(Components26_1,'2-6','no')}
+            {myFunction(Components27_1,'2-7','no')}
 
           </Routes>
         </Suspense>
