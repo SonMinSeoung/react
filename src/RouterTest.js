@@ -22,6 +22,8 @@ import * as Two_4Components_1 from "./common/2-4/State as a Snapshot";
 import * as Two_5Components_1 from "./common/2-5/Queueing a Series of State Updates";
 import * as Two_6Components_1 from "./common/2-6/Updating Objects in State";
 import * as Two_7Components_1 from "./common/2-7/Updating Arrays in State";
+import * as Three_1Components_1 from "./common/3-1/App2";
+import * as Three_1Components_2 from "./common/3-1/Reacting to Input with State";
 
 
 
@@ -49,6 +51,8 @@ export default function App() {
   const Components25_1 = Object.values(Two_5Components_1);
   const Components26_1 = Object.values(Two_6Components_1);
   const Components27_1 = Object.values(Two_7Components_1);
+  const Components31_1 = Object.values(Three_1Components_1);
+  const Components31_2 = Object.values(Three_1Components_2);
 
 
   function myFunction(Names,num,flag='ul') {
@@ -147,8 +151,10 @@ export default function App() {
           </ul>
         </nav>
         <nav style={{marginRight: 'auto'}}>
-          <ul>
-            <li> 이렇게되면 어찌되는건가333요?</li>
+        <ul>
+              3-1 Reacting to Input with State
+              {myFunction(Components31_1,'3-1')}
+              {myFunction(Components31_2,'3-1')}
           </ul>
         </nav>
         <nav style={{marginRight: 'auto'}}>
@@ -181,6 +187,8 @@ export default function App() {
             {myFunction(Components25_1,'2-5','no')}
             {myFunction(Components26_1,'2-6','no')}
             {myFunction(Components27_1,'2-7','no')}
+            {myFunction(Components31_1,'3-1','1')}
+              {myFunction(Components31_2,'3-1','1')}
 
           </Routes>
         </Suspense>
