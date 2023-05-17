@@ -5,7 +5,8 @@ time: Date;
 }
 
 const Clock: React.FC<ClockProps> = ({ time }) => {
-let hours = time.getHours();
+const currentTime = time || new Date();
+let hours = currentTime.getHours();
 let className: string;
 if (hours >= 0 && hours <= 6) {
 className = 'night';
@@ -14,7 +15,7 @@ className = 'day';
 }
 return (
 <h1 className={className}>
-{time.toLocaleTimeString()}
+{currentTime.toLocaleTimeString()}
 </h1>
 );
 };
