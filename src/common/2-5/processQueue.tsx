@@ -1,14 +1,12 @@
-export function getFinalState<T>(baseState: T, queue: Array<((prevState: T) => T) | T>): T {
+export function getFinalState<T>(baseState: T, queue: Array<((prevState: T) => T) | T>=[]): T {
     let finalState = baseState;
     
     for (let update of queue) {
-    if (typeof update === 'function') {
-
-    finalState = (update as (prevState: T) => T)(finalState);
-    } else {
-
-    finalState = update;
-    }
+      if (typeof update === 'function') {
+        finalState = (update as (prevState: T) => T)(finalState);
+      } else {
+      finalState = update;
+      }
     }
     
     return finalState;
